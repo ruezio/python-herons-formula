@@ -1,5 +1,5 @@
 
-#Area of tringle by Heron's Formula
+#Area of triangle by Heron's Formula
 
 import math
 import sys
@@ -46,7 +46,7 @@ s = (a1 + b1 + c1)/2
 if (a1 + b1 > c1) and (b1 + c1 > a1) and (c1 + a1 > b1):
     #Area
     Area = math.sqrt(s * (s - a1) * (s - b1) * (s - c1))
-    Area = round(Area)
+    Area = round(Area, 2)
     #Result
     print(f"->Area of your tringle: {Area} cm^2")
 else:
